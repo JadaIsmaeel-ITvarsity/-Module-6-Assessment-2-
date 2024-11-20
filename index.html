@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto4Sale</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #333; color: #fff; padding: 10px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        .container { padding: 20px; }
+        .vehicle { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; }
+        .vehicle img { max-width: 100%; height: auto; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        .contact-form button { padding: 10px 20px; background-color: #333; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Auto4Sale</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#featured">Featured Vehicles</a>
+        <a href="#vehicles">Vehicles for Sale</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="container">
+    <h2>About Us</h2>
+    <p>Welcome to Auto4Sale, your trusted partner in finding the best vehicles on the market. We offer a wide range of quality vehicles to meet your needs, whether you're looking for a reliable family car, a stylish sports car, or a durable work truck. Our team is dedicated to providing excellent service and competitive prices.</p>
+</section>
+
+<!-- Featured Vehicles Section -->
+<section id="featured" class="container">
+    <h2>Featured Vehicles</h2>
+    <div class="vehicle">
+        <h3>2020 Lamborghini Aventador SVJ</h3>
+        <img src="images/lambo.jpg" alt="lamborghini">       <img src="images/lambo2.jpg" alt="lamborghini">
+        <p>Price: $650.000</p>
+        <p>About : The indomitable V12 engine of Aventador SVJ stands out for its exceptional design and the advanced technology of its materials. Boasting 770 CV at 8,500 RPMs, and capable of accelerating from 0-100 km/h in 2.8 seconds, Aventador SVJ provides thrills unlike anything that has ever been experienced before. </p>
+    </div>
+    
+    <div class="vehicle">
+        <h3>2024 Ferrari SF90xx</h3>
+        <img src="images/ferrari1.jpg" alt="Ferrarisf90">     <img src="images/ferrari2.jpg" alt="Ferrarisf90">
+        <p>Price: $890.000</p>
+        <p>About : The SF90 has a 90° V8 turbo engine that produces 780 cv, and three electric motors that produce a total of 220 cv. The combination of the engine and electric motors gives the SF90 a maximum power of 1,000 cv.</p>
+    </div>
+    
+</section>
+
+<!-- Vehicles for Sale Section -->
+<section id="vehicles" class="container">
+    <h2>Vehicles for Sale</h2>
+
+    <div class="vehicle">
+        <h3>2018 GTR-R35 (Liberty Walk Edition)</h3>
+        <img src="images/gtr1.webp" alt="GTR R35">              <img src="images/gtr2.jpg" alt="GTR R35">
+        <p>Price: $75,000</p>
+        <p>About : A whopping 1,580 hp and 1,092 lb-ft of torque give this beast motivation to sprint to 62 mph in two seconds flat, before topping out a heady 205 mph.The Nissan GTR's extraordinary speed as one of the fastest road-legal cars is the result of its powerful engine, advanced all-wheel drive, cutting-edge technology.</p>
+    </div>
+
+    <div class="vehicle">
+        <h3>2023 M4 G80</h3>
+        <img src="images/m4.jpg" alt="M4 G80">                   <img src="images/m42.jpg" alt="M4 G80">
+        <p>Price: $90,000</p>
+        <p>About : The BMW M4 G82 is a high-performance sports coupe with a 6-cylinder engine, a fast transmission, and several driving dynamics features.The M4 G82 has a Carbon Fibre M interior trim that includes a carbon steering wheel and shift paddles.</p>
+    </div>
+
+    <div class="vehicle">
+        <h3>2022 G-Wagon (Mansory Edition)</h3>
+        <img src="images/gwagon.jpg" alt="G-Wagon">               <img src="images/gwagon2.jpg" alt="G-Wagon">
+        <p>Price: $900.000</p>
+        <p>Perfect for off-road adventures with impressive durability and handling.Only eight copies of the Gronos and Grande Entrée will each be produced, leaving 16 of these latest Mansory G-Wagens for the world. If you see one, count yourself lucky.This limited edition of 10 units has a power increase of up to 850 horsepower and 1,000 Nm of torque. It can go from 0 to 100 km/h in 3.5 seconds and has a top speed of 250 km/h.</p>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, please feel free to reach out to us using the form below or by phone or email.</p>
+    <p>Phone: (555) 123-4567</p>
+    <p>Email: info@auto4sale.com</p>
+    
+    <form class="contact-form" action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; created by : Ismaeel - 2024 Auto4Sale. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
